@@ -22,7 +22,7 @@ function HomePage() {
                     <strong className={styles.subtitle}>如何安装：</strong>
                 <ol>
                     <li>下载项目源码</li>
-                    <li>安装python并打开命令行工具，使用<mark> pip install -r requirements.txt</mark> 导入python包，如果你的python依赖包下载太慢，我建议使用：<mark>pip install -i https://mirrors.cloud.tencent.com/pypi/simple -r requriements.txt</mark></li>
+                    <li>安装python并打开命令行工具，使用<mark> pip install -r requirements.txt</mark> 导入python包，如果你的python依赖包下载太慢，我建议使用：<mark>pip install -i https://mirrors.cloud.tencent.com/pypi/simple -r requirements.txt</mark></li>
                     <li>调用python 执行目录下pyminer.py，例如python安装在C盘根目录下，可以在cmd命令行中执行：<mark>C:\python\python.exe C:\PyMiner\pyminer.py</mark></li>
                     <li>此外，你也可以使用pyinstaller进行编译后使用，编译语句：<mark>pyinstaller -i logo.ico -w pyminer.py</mark></li>
                 </ol>

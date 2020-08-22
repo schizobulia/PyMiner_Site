@@ -15,7 +15,7 @@ $ npm run build
 - [Next.js](https://www.nextjs.cn/)
 - [Antd](https://ant.design/components/overview-cn/)
 
-### 任何参与
+### 如何参与
 - 请提交Pr或者issues
 
 ### License

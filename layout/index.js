@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout, Menu, Input, Row, Col, BackTop, Badge } from 'antd';
 import Head from 'next/head';
+import Link from 'next/link';
 import {
     HomeOutlined,
     HourglassOutlined,
@@ -12,7 +13,7 @@ import {
     ApiOutlined,
     CheckCircleOutlined
 } from '@ant-design/icons';
-import Link from 'next/link';
+
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -34,7 +35,7 @@ export default class SiderLayout extends React.Component {
             <Layout style={{ minHeight: '100vh' }}>
                 <Head>
                     <title>PyMiner</title>
-                    <link rel="icon" href="/img/favicon.ico"/>
+                    <link rel="icon" href="/img/favicon.ico" />
                 </Head>
                 <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse} theme="dark" collapsedWidth="0" defaultCollapsed={true}>
                     <div className="logo" style={{ height: '64px' }}>
@@ -98,7 +99,7 @@ export default class SiderLayout extends React.Component {
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key="16">
-                                <Link href="/function/workflow">
+                                <Link href="/function/report">
                                     <a>输出报告</a>
                                 </Link>
                             </Menu.Item>
@@ -162,25 +163,25 @@ export default class SiderLayout extends React.Component {
                             <Col xs={2} sm={4} md={6} lg={8} xl={10}>
                                 <Menu mode="horizontal">
                                     <Menu.Item key="h1">
-                                        <Link href="https://gitee.com/py2cn/pyminer"><a>码云</a></Link>
+                                        <Link href="https://gitee.com/py2cn/pyminer"><a target="_blank">码云</a></Link>
                                     </Menu.Item>
                                     <Menu.Item key="h2">
-                                        <Link href="https://github.com/aboutlong/pyminer"><a>Github</a></Link>
+                                        <Link href="https://github.com/aboutlong/pyminer"><a target="_blank">Github</a></Link>
                                     </Menu.Item>
                                     <Menu.Item key="h3">
                                         <Badge count="hot" offset={[10, -5]}>
-                                            <Link href="/plan"><a>开源计划</a></Link>
+                                            <Link href="https://gitee.com/py2cn/pyminer/issues"><a target="_blank">开源计划</a></Link>
                                         </Badge>
                                     </Menu.Item>
 
                                     <Menu.Item key="h4">
                                         <Badge count="hot" offset={[10, -5]}>
-                                            <Link href="http://py2cn.com/zentao/www"><a>禅道任务</a></Link>
+                                            <Link href="http://py2cn.com/zentao/www"><a target="_blank">禅道任务</a></Link>
                                         </Badge>
                                     </Menu.Item>
                                     <Menu.Item key="h5">
                                         <Badge count="hot" offset={[10, -5]}>
-                                            <Link href="http://py2cn.com/bbs/"><a>社区</a></Link>
+                                            <Link href="http://py2cn.com/bbs/"><a target="_blank">社区</a></Link>
                                         </Badge>
                                     </Menu.Item>
                                     <SubMenu title="更多">
