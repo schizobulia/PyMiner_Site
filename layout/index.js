@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout, Menu, Input, Row, Col, BackTop, Badge } from 'antd';
-import Head from 'next/head';
 import Link from 'next/link';
 import {
     HomeOutlined,
@@ -33,10 +32,7 @@ export default class SiderLayout extends React.Component {
         const selectKey = this.props.selectKey;
         return (
             <Layout style={{ minHeight: '100vh' }}>
-                <Head>
-                    <title>PyMiner</title>
-                    <link rel="icon" href="/img/favicon.ico" />
-                </Head>
+                <title>PyMiner</title>
                 <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse} theme="dark" collapsedWidth="0" defaultCollapsed={true}>
                     <div className="logo" style={{ height: '64px' }}>
                         <span style={{ width: '100%', height: '60px', display: "block", lineHeight: '60px', textAlign: 'center', fontSize: '20px', letterSpacing: '.0.25em', fontWeight: '700', textTransform: 'uppercase', color: 'white' }}>
