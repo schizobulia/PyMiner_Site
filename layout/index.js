@@ -34,7 +34,7 @@ export default class SiderLayout extends React.Component {
         return (
             <Layout style={{ minHeight: '100vh' }}>
                 <title>PyMiner</title>
-                <Sider collapsible   breakpoint="lg" collapsed={this.state.collapsed} onCollapse={this.onCollapse} theme="dark" collapsedWidth="0" defaultCollapsed={true}>
+                <Sider collapsible breakpoint="lg" collapsed={this.state.collapsed} onCollapse={this.onCollapse} theme="dark" collapsedWidth="0" defaultCollapsed={true}>
                     <div className="logo" style={{ height: '64px' }}>
                         <span style={{ width: '100%', height: '60px', display: "block", lineHeight: '60px', textAlign: 'center', fontSize: '20px', letterSpacing: '.0.25em', fontWeight: '700', textTransform: 'uppercase', color: 'white' }}>
                             <CheckCircleOutlined fill="#ffffff" />
@@ -160,7 +160,7 @@ export default class SiderLayout extends React.Component {
                             <Col xs={2} sm={4} md={6} lg={8} xl={10}>
                                 <Menu mode="horizontal" defaultSelectedKeys={topKey}>
                                     <Menu.Item key="h0">
-                                        <Link href="/news/list"><a target="_blank">新闻</a></Link>
+                                        <Link href="/news/list"><a>新闻</a></Link>
                                     </Menu.Item>
                                     <Menu.Item key="h1">
                                         <Link href="https://gitee.com/py2cn/pyminer"><a target="_blank">码云</a></Link>

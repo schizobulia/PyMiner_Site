@@ -1,6 +1,7 @@
 import Layout from '../../layout/index';
 import { List } from 'antd';
 import Link from 'next/link';
+import { getSortedNewssData } from '../../lib/news';
 
 function NewsListPage(props) {
     return <Layout selectKey={["0", "0"]} topkey={['h0']}>
@@ -8,12 +9,13 @@ function NewsListPage(props) {
             header={<div>最新消息</div>}
             // footer={<div>Footer</div>}
             bordered
-            dataSource={props.data}
+            dataSource={props.allNewsData}
             renderItem={item => (
                 <List.Item key={{ item }}>
-                    <Link href={`/news/${encodeURI(item)}`}>
-                        <a target="_blank">{item}</a>
+                    <Link href={`/news/${encodeURI(item.id)}`}>
+                        <a target="_blank">{item.title}</a>
                     </Link>
+                    <span>{item.date}</span>
                 </List.Item>
             )}
         />
@@ -21,12 +23,11 @@ function NewsListPage(props) {
 }
 
 export async function getStaticProps() {
-    const baseUrl = `http://py2cn.com/blog/data.json`;
-    const res = await fetch(baseUrl);
+    const allNewsData = getSortedNewssData();
     return {
         props: {
-            data: await res.json()
-        },
+            allNewsData
+        }
     }
 }
 
