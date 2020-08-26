@@ -159,21 +159,21 @@ export default class SiderLayout extends React.Component {
                             </Col>
                             <Col xs={2} sm={4} md={6} lg={8} xl={10}>
                                 <Menu mode="horizontal" defaultSelectedKeys={topKey}>
-                                    <Menu.Item key="h0">
-                                        <Link href="/news/list"><a>新闻</a></Link>
-                                    </Menu.Item>
+                         
                                     <Menu.Item key="h1">
-                                        <Link href="https://gitee.com/py2cn/pyminer"><a target="_blank">码云</a></Link>
+                                        <Link href="https://gitee.com/py2cn/pyminer"><a target="_blank">Gitee</a></Link>
                                     </Menu.Item>
                                     <Menu.Item key="h2">
                                         <Link href="https://github.com/aboutlong/pyminer"><a target="_blank">Github</a></Link>
+                                    </Menu.Item>
+                                    <Menu.Item key="h0">
+                                        <Link href="/news/list"><a>新闻</a></Link>
                                     </Menu.Item>
                                     <Menu.Item key="h3">
                                         <Badge count="hot" offset={[10, -5]}>
                                             <Link href="https://gitee.com/py2cn/pyminer/issues"><a target="_blank">开源计划</a></Link>
                                         </Badge>
                                     </Menu.Item>
-
                                     <Menu.Item key="h4">
                                         <Badge count="hot" offset={[10, -5]}>
                                             <Link href="http://py2cn.com/zentao/www"><a target="_blank">禅道任务</a></Link>

@@ -1,6 +1,5 @@
 import Layout from '../layout/index';
 import { Typography, Divider } from 'antd';
-import Link from 'next/link';
 import styles from './index.module.css';
 const { Title, Paragraph } = Typography;
 
@@ -14,11 +13,6 @@ function AboutPage() {
                 <strong className={styles.subtitle}>作者： PyMiner Development Team</strong>
                 <strong className={styles.subtitle}>作者QQ： 454017698</strong>
                 <strong className={styles.subtitle}>PyMiner开发组QQ群： 945391275</strong>
-                <Link href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=wqOgrbe2rq2spYKzs_yhra8">
-                    <a target="_blank">
-                        <img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png" />
-                    </a>
-                </Link>
                 <div style={{ height: '2rem' }}></div>
                 <strong className={styles.subtitle}>贡献人名单：(再次感谢各位卓越贡献，排名不分先后，小组成员较多，无法一一列出，更多名单请查看QQ群PyMiner开发组)</strong>
                 <ul>

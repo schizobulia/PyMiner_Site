@@ -18,6 +18,10 @@ $ npm run build
 ### 如何参与
 - 请提交Pr或者issues
 
+### 其他
+- [预览地址](https://py-miner-site.vercel.app/)
+- 提交到主分支之后预览地址的界面会自动更新
+
 ### License
 采用MIT开源许可证
 
