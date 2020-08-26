@@ -3,6 +3,9 @@ import { Typography, Divider } from 'antd';
 import styles from './index.module.css';
 const { Title, Paragraph } = Typography;
 
+/**
+ * 加入我们页
+ */
 function AboutPage() {
     return <Layout selectKey={["sub7"]}>
         <Typography>

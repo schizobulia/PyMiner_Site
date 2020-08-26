@@ -18,10 +18,13 @@ const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 const { Search } = Input;
 
+/**
+ * 首页全局Layout
+ */
 export default class SiderLayout extends React.Component {
 
     state = {
-        collapsed: false,
+        collapsed: false, //Layout收缩状态控制
     };
 
     onCollapse = collapsed => {
@@ -159,7 +162,7 @@ export default class SiderLayout extends React.Component {
                             </Col>
                             <Col xs={2} sm={4} md={6} lg={8} xl={10}>
                                 <Menu mode="horizontal" defaultSelectedKeys={topKey}>
-                         
+
                                     <Menu.Item key="h1">
                                         <Link href="https://gitee.com/py2cn/pyminer"><a target="_blank">Gitee</a></Link>
                                     </Menu.Item>

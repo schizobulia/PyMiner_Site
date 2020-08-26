@@ -2,6 +2,9 @@ import Layout from '../../layout/index';
 import { Typography, Divider } from 'antd';
 const { Title, Paragraph } = Typography;
 
+/**
+ * 控制台页
+ */
 function ConsolePage() {
     return <Layout selectKey={["sub2", "17"]}>
         <Typography>

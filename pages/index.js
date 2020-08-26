@@ -10,6 +10,9 @@ function downloadClick() {
     window.open('https://gitee.com/py2cn/pyminer');
 }
 
+/**
+ * 首页
+ */
 function HomePage() {
     return <Layout selectKey={['1']}>
         <Typography>
