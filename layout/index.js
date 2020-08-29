@@ -121,16 +121,13 @@ export default class SiderLayout extends React.Component {
                             <Menu.Item key="22">模型</Menu.Item>
                             <Menu.Item key="23">评估</Menu.Item>
                         </SubMenu>
-                        <SubMenu key="sub4" icon={<ApiOutlined />} title="API设计">
-                            <Menu.Item key="24">
-                                <Link href="/interface/one">
-                                    <a>API 1</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="25">API 2</Menu.Item>
-                            <Menu.Item key="26">API 3</Menu.Item>
-                            <Menu.Item key="27">API 4</Menu.Item>
-                        </SubMenu>
+
+                        <Menu.Item key="sub4" icon={<ApiOutlined />}>
+                            <Link href="http://doc.py2cn.com">
+                                <a target="_blank">API</a>
+                            </Link>
+                        </Menu.Item>
+ 
                         <Menu.Item key="sub5" icon={<FolderOpenOutlined />}>
                             <Link href="/resources">
                                 <a>资源文件</a>
