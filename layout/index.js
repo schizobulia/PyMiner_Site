@@ -35,7 +35,7 @@ export default class SiderLayout extends React.Component {
         const selectKey = this.props.selectKey;
         const topKey = this.props.topkey;
         return (
-            <Layout style={{ minHeight: '100vh' }}>
+            <Layout style={{ minHeight: '100vh' }} hasSider={true}>
                 <title>PyMiner</title>
                 <Sider collapsible breakpoint="lg" collapsed={this.state.collapsed} onCollapse={this.onCollapse} theme="dark" collapsedWidth="0" defaultCollapsed={true}>
                     <div className="logo" style={{ height: '64px' }}>
@@ -150,9 +150,8 @@ export default class SiderLayout extends React.Component {
                         </Menu.Item>
                     </Menu>
                 </Sider>
-                <Layout className="site-layout" >
+                <Layout className="site-layout">
                     <Header className="header" style={{ padding: 0, paddingLeft: '20px', background: 'white' }} >
-
                         <Row>
                             <Col xs={20} sm={4} md={6} lg={8} xl={5}>
                                 <Search
@@ -207,7 +206,6 @@ export default class SiderLayout extends React.Component {
                                 </Menu>
                             </Col>
                         </Row>
-
                     </Header>
                     <Content style={{ margin: '10px 16px', padding: '20px 30px', border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 0px 8px 0 rgba(0,0,0,0.06), 0 1px 0px 0 rgba(0,0,0,0.02)', backgroundColor: 'white' }}>
                         {this.props.children}

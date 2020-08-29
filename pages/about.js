@@ -1,12 +1,48 @@
 import Layout from '../layout/index';
 import { Typography, Divider } from 'antd';
+import Link from 'next/link';
 import styles from './index.module.css';
 const { Title, Paragraph } = Typography;
+
+
+const frinedsLinks = [
+    { name: 'learning｜torch_rookie', link: '' },
+    { name: 'Irony."[讽刺]', link: 'https://pyqt.site' },
+    { name: '吴宫幽径', link: '' },
+    { name: '侯展意', link: 'https://gitee.com/hzy15610046011' },
+    { name: '钮振江', link: 'https://gitee.com/BigBossQzz' },
+    { name: 'Irony', link: 'https://gitee.com/892768447' },
+    { name: 'Junruoyu-Zheng', link: 'https://gitee.com/junruoyu-zheng' },
+    { name: '橙子++', link: 'https://gitee.com/hffqyd' },
+    { name: 'D.I.D', link: 'https://github.com/schizobulia' },
+    { name: '郑君', link: 'https://gitee.com/junruoyu-zheng' },
+    { name: '冰中的火', link: 'https://gitee.com/fireinice' },
+    { name: 'pyqt_fun', link: '' },
+    { name: 'Siffre@三弗', link: '' },
+    { name: 'python萌新', link: '' },
+    { name: 'dogface', link: '' },
+    { name: '熊二', link: '' },
+    { name: 'opencascade高性能三维重建平台', link: '' },
+    { name: '没吃过鸡的程序猿', link: '' },
+    { name: 'Nicewrap', link: '' },
+    { name: '深圳-PyQT打包', link: '' },
+    { name: '人间白头', link: '' },
+    { name: 'HolidayCoffee', link: '' },
+    { name: 'L', link: '' },
+    { name: 'matlab_py', link: '' },
+];
 
 /**
  * 加入我们页
  */
 function AboutPage() {
+    let LIS = frinedsLinks.map((e, i) => {
+        return <li>
+            <Link href={e.link} key={i}>
+                <a target="_blank">{e.name}</a>
+            </Link>
+        </li>
+    });
     return <Layout selectKey={["sub7"]}>
         <Typography>
             <Title>联系我们</Title>
@@ -19,23 +55,7 @@ function AboutPage() {
                 <div style={{ height: '2rem' }}></div>
                 <strong className={styles.subtitle}>贡献人名单：(再次感谢各位卓越贡献，排名不分先后，小组成员较多，无法一一列出，更多名单请查看QQ群PyMiner开发组)</strong>
                 <ul>
-                    <li>learning｜torch_rookie</li>
-                    <li>Irony."[讽刺]</li>
-                    <li>吴宫幽径</li>
-                    <li>D.I.D</li>
-                    <li>pyqt_fun</li>
-                    <li>Siffre@三弗</li>
-                    <li>python萌新</li>
-                    <li>dogface</li>
-                    <li>熊二</li>
-                    <li>opencascade高性能三维重建平台</li>
-                    <li>没吃过鸡的程序猿</li>
-                    <li>Nicewrap</li>
-                    <li>深圳-PyQT打包</li>
-                    <li>人间白头</li>
-                    <li>HolidayCoffee</li>
-                    <li>L</li>
-                    <li>matlab_py</li>
+                    {LIS}
                 </ul>
             </Paragraph>
         </Typography>
