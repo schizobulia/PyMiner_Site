@@ -12,6 +12,7 @@ $ npm run build
 ```
 
 ### 使用到的技术
+- [Node.js >= 10.13.0](https://nodejs.org/)
 - [Next.js](https://www.nextjs.cn/)
 - [Antd](https://ant.design/components/overview-cn/)
 
