@@ -3,6 +3,10 @@ import { List } from 'antd';
 import Link from 'next/link';
 import { getSortedNewssData } from '../../lib/news';
 
+/**
+ * 新闻列表页
+ * @param {*} props 
+ */
 function NewsListPage(props) {
     return <Layout selectKey={["0", "0"]} topkey={['h0']}>
         <List

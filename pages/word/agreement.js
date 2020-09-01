@@ -2,6 +2,9 @@ import Layout from '../../layout/index';
 import { Typography, Divider } from 'antd';
 const { Title, Paragraph, Text } = Typography;
 
+/**
+ * 开源许可页
+ */
 function AgreementPage() {
     return <Layout selectKey={["sub6", "31"]}>
         <Typography>

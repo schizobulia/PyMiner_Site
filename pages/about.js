@@ -4,13 +4,19 @@ import Link from 'next/link';
 import styles from './index.module.css';
 const { Title, Paragraph } = Typography;
 
+
 const frinedsLinks = [
     { name: 'learning｜torch_rookie', link: '' },
-    { name: 'Irony."[讽刺]', link: '' },
+    { name: 'Irony."[讽刺]', link: 'https://pyqt.site' },
     { name: '吴宫幽径', link: '' },
+    { name: '侯展意', link: 'https://gitee.com/hzy15610046011' },
+    { name: '钮振江', link: 'https://gitee.com/BigBossQzz' },
+    { name: 'Irony', link: 'https://gitee.com/892768447' },
+    { name: 'Junruoyu-Zheng', link: 'https://gitee.com/junruoyu-zheng' },
+    { name: '橙子++', link: 'https://gitee.com/hffqyd' },
     { name: 'D.I.D', link: 'https://github.com/schizobulia' },
-    { name: '郑君', link: '' },
-    { name: '冰中的火', link: '' },
+    { name: '郑君', link: 'https://gitee.com/junruoyu-zheng' },
+    { name: '冰中的火', link: 'https://gitee.com/fireinice' },
     { name: 'pyqt_fun', link: '' },
     { name: 'Siffre@三弗', link: '' },
     { name: 'python萌新', link: '' },
@@ -24,8 +30,11 @@ const frinedsLinks = [
     { name: 'HolidayCoffee', link: '' },
     { name: 'L', link: '' },
     { name: 'matlab_py', link: '' },
-]
+];
 
+/**
+ * 加入我们页
+ */
 function AboutPage() {
     let LIS = frinedsLinks.map((e, i) => {
         return <li>

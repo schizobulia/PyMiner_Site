@@ -2,6 +2,9 @@ import Layout from '../../layout/index';
 import { Typography, Divider } from 'antd';
 const { Title, Paragraph } = Typography;
 
+/**
+ * 数据可视化页
+ */
 function DataVisualizationPage() {
     return <Layout selectKey={["sub2", "10"]}>
         <Typography>

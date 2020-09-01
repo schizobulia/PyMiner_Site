@@ -3,6 +3,9 @@ import { Typography, Divider } from 'antd';
 import styles from './index.module.css';
 const { Title, Paragraph } = Typography;
 
+/**
+ * 编程规范页
+ */
 function RulePage() {
     return <Layout selectKey={["sub1", "3"]}>
         <Typography>

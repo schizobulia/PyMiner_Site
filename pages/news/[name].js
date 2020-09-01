@@ -19,6 +19,10 @@ export async function getStaticProps({ params }) {
     }
 }
 
+/**
+ * 单个新闻页
+ * @param {*} props 
+ */
 export default function NewsInfoPage(props) {
     return <Layout selectKey={["0", "0"]} topkey={['h0']}>
         <div dangerouslySetInnerHTML={{ __html: props.postData && props.postData.contentHtml }} />
