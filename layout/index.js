@@ -173,16 +173,6 @@ export default class SiderLayout extends React.Component {
                                             <Link href="https://gitee.com/py2cn/pyminer/issues"><a target="_blank">开源计划</a></Link>
                                         </Badge>
                                     </Menu.Item>
-                                    <Menu.Item key="h4">
-                                        <Badge count="hot" offset={[10, -5]}>
-                                            <Link href="http://py2cn.com/zentao/www"><a target="_blank">禅道任务</a></Link>
-                                        </Badge>
-                                    </Menu.Item>
-                                    <Menu.Item key="h5">
-                                        <Badge count="hot" offset={[10, -5]}>
-                                            <Link href="http://py2cn.com/bbs/"><a target="_blank">社区</a></Link>
-                                        </Badge>
-                                    </Menu.Item>
                                     <SubMenu title="更多">
                                         <Menu.Item key="setting:1"> <Link href="https://www.python.org/"><a target="_blank">蟒蛇</a></Link> </Menu.Item>
                                         <Menu.Item key="setting:2"> <Link href="https://www.anaconda.com/"><a target="_blank">水蟒</a></Link>  </Menu.Item>
