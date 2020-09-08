@@ -24,7 +24,7 @@ export async function getStaticProps({ params }) {
  * @param {*} props 
  */
 export default function NewsInfoPage(props) {
-    return <Layout selectKey={["0", "0"]} topkey={['h0']}>
+    return <Layout topkey={['h0']}>
         <div dangerouslySetInnerHTML={{ __html: props.postData && props.postData.contentHtml }} />
     </Layout>
 };

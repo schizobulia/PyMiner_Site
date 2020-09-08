@@ -8,7 +8,7 @@ import { getSortedNewssData } from '../../lib/news';
  * @param {*} props 
  */
 function NewsListPage(props) {
-    return <Layout selectKey={["0", "0"]} topkey={['h0']}>
+    return <Layout topkey={['h0']}>
         <List
             header={<div>最新消息</div>}
             // footer={<div>Footer</div>}
