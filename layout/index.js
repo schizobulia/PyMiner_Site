@@ -1,169 +1,46 @@
 import React from 'react';
-import { Layout, Menu, Input, Row, Col, BackTop, Badge } from 'antd';
+import { Layout, Menu, Row, Col, BackTop, Badge } from 'antd';
 import Link from 'next/link';
-import {
-    HomeOutlined,
-    HourglassOutlined,
-    CodepenOutlined,
-    FolderOpenOutlined,
-    UsergroupAddOutlined,
-    FileWordOutlined,
-    AntDesignOutlined,
-    ApiOutlined,
-    CheckCircleOutlined
-} from '@ant-design/icons';
+import { CheckCircleOutlined } from '@ant-design/icons';
 
-
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Footer } = Layout;
 const { SubMenu } = Menu;
-const { Search } = Input;
 
 /**
  * 首页全局Layout
  */
 export default class SiderLayout extends React.Component {
 
-    state = {
-        collapsed: false, //Layout收缩状态控制
-    };
-
-    onCollapse = collapsed => {
-        this.setState({ collapsed });
-    };
-
     render() {
-        const selectKey = this.props.selectKey;
         const topKey = this.props.topkey;
         return (
             <Layout style={{ minHeight: '100vh' }} hasSider={true}>
                 <title>PyMiner</title>
-                <Sider collapsible breakpoint="lg" collapsed={this.state.collapsed} onCollapse={this.onCollapse} theme="dark" collapsedWidth="0" defaultCollapsed={true}>
-                    <div className="logo" style={{ height: '64px' }}>
-                        <span style={{ width: '100%', height: '60px', display: "block", lineHeight: '60px', textAlign: 'center', fontSize: '20px', letterSpacing: '.0.25em', fontWeight: '700', textTransform: 'uppercase', color: 'white' }}>
-                            <CheckCircleOutlined fill="#ffffff" />
-                            <span style={{ width: '0.3rem', display: 'inline-block', }}></span>
-                            PyMiner
-                        </span>
-                    </div>
-                    <Menu theme="dark" selectedKeys={selectKey} defaultOpenKeys={selectKey} mode="inline" >
-                        <Menu.Item key="1" icon={<HomeOutlined />}>
-                            <Link href="/">
-                                <a>主页</a>
-                            </Link>
-                        </Menu.Item>
-                        <Menu.Item key="sub1" icon={<CodepenOutlined />}>
-                            <Link href="/rule">
-                                <a>编程规范</a>
-                            </Link>
-                        </Menu.Item>
-
-                        <SubMenu key="sub2" icon={<HourglassOutlined />} title="功能设计">
-                            <Menu.Item key="8">
-                                <Link href="/function/dataprocessing">
-                                    <a>数据处理</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="9">
-                                <Link href="/function/dataanalysis">
-                                    <a>数据分析</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="10">
-                                <Link href="/function/datavisualization">
-                                    <a>数据可视化</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="11">
-                                <Link href="/function/modeling">
-                                    <a>模型建立</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="12">
-                                <Link href="/function/assessment">
-                                    <a>评估</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="13">
-                                <Link href="/function/workspace">
-                                    <a>工作区间</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="14">
-                                <Link href="/function/filemanagement">
-                                    <a>文件管理</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="15">
-                                <Link href="/function/workflow">
-                                    <a>业务流程</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="16">
-                                <Link href="/function/report">
-                                    <a>输出报告</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="17">
-                                <Link href="/function/console">
-                                    <a>控制台</a>
-                                </Link>
-                            </Menu.Item>
-                        </SubMenu>
-                        <SubMenu key="sub3" icon={<AntDesignOutlined />} title="UI设计">
-                            <Menu.Item key="18">
-                                <Link href="/ui/dataprocessing">
-                                    <a>数据处理</a>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item key="19">数据分析</Menu.Item>
-                            <Menu.Item key="20">数据分析</Menu.Item>
-                            <Menu.Item key="21">可视化</Menu.Item>
-                            <Menu.Item key="22">模型</Menu.Item>
-                            <Menu.Item key="23">评估</Menu.Item>
-                        </SubMenu>
-
-                        <Menu.Item key="sub4" icon={<ApiOutlined />}>
-                            <Link href="http://doc.py2cn.com">
-                                <a target="_blank">API</a>
-                            </Link>
-                        </Menu.Item>
- 
-                        <Menu.Item key="sub5" icon={<FolderOpenOutlined />}>
-                            <Link href="/resources">
-                                <a>资源文件</a>
-                            </Link>
-                        </Menu.Item>
-                        <SubMenu key="sub6" icon={<FileWordOutlined />} title="相关文档">
-                            <Menu.Item key="31">
-                                <Link href="/word/agreement">
-                                    <a>许可协议</a>
-                                </Link>
-                            </Menu.Item>
-                        </SubMenu>
-                        <Menu.Item key="sub7" icon={<UsergroupAddOutlined />}>
-                            <Link href="/about">
-                                <a>加入我们</a>
-                            </Link>
-                        </Menu.Item>
-                    </Menu>
-                </Sider>
                 <Layout className="site-layout">
                     <Header className="header" style={{ padding: 0, paddingLeft: '20px', background: 'white' }} >
                         <Row>
-                            <Col xs={20} sm={4} md={6} lg={8} xl={5}>
-                                <Search
-                                    placeholder="开发中"
-                                    style={{ width: '100%', borderRadius: '8px' }}
-                                />
+                            <Col xs={20} sm={4} md={6} lg={8} xl={17}>
+                                <div className="logo" style={{ height: '64px' }}>
+                                    <Link href="/"><a>
+                                        <span style={{ width: '100%', height: '60px', display: "block", lineHeight: '60px', textAlign: 'left', fontSize: '20px', letterSpacing: '.0.25em', fontWeight: '700', textTransform: 'uppercase', color: '#111010' }}>
+                                            <CheckCircleOutlined fill="#ffffff" />
+                                            <span style={{ width: '0.3rem', display: 'inline-block', }}></span>
+                                            PyMiner
+                                        </span>
+                                    </a>
+                                    </Link>
+                                </div>
                             </Col>
-                            <Col xs={2} sm={4} md={6} lg={8} xl={10}>
+                            <Col xs={2} sm={4} md={6} lg={8} xl={7}>
                                 <Menu mode="horizontal" defaultSelectedKeys={topKey}>
-
                                     <Menu.Item key="h1">
                                         <Link href="https://gitee.com/py2cn/pyminer"><a target="_blank">Gitee</a></Link>
                                     </Menu.Item>
                                     <Menu.Item key="h2">
                                         <Link href="https://github.com/aboutlong/pyminer"><a target="_blank">Github</a></Link>
+                                    </Menu.Item>
+                                    <Menu.Item key="h4">
+                                        <Link href="http://py2cn.com/docs/"><a target="_blank">文档</a></Link>
                                     </Menu.Item>
                                     <Menu.Item key="h0">
                                         <Link href="/news/list"><a>新闻</a></Link>
@@ -194,7 +71,7 @@ export default class SiderLayout extends React.Component {
                             </Col>
                         </Row>
                     </Header>
-                    <Content style={{ margin: '10px 16px', padding: '20px 30px', border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 0px 8px 0 rgba(0,0,0,0.06), 0 1px 0px 0 rgba(0,0,0,0.02)', backgroundColor: 'white' }}>
+                    <Content style={{ boxShadow: '0 0px 8px 0 rgba(0,0,0,0.06), 0 1px 0px 0 rgba(0,0,0,0.02)', backgroundColor: 'white' }}>
                         {this.props.children}
                         <BackTop />
                     </Content>

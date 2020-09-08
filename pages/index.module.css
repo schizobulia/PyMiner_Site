@@ -1,8 +1,25 @@
-.subtitle{
-    display: block;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    border-color: #666;
+    background-image: url(/img/gGlUMYGEIvjDOOw.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2rem;
 }
-.img{
-    max-width: 100%;
+
+.hometip{
+    padding-top: 20rem;
+}
+
+@media screen and (max-width: 480px) {
+    .banner{
+        font-size: 1.5rem;
+    }
+    .hometip{
+        padding-top: 14rem;
+    }
 }
