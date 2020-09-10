@@ -6,7 +6,7 @@ export async function getStaticPaths() {
     const paths = await getAllNewsIds();
     return {
         paths,
-        fallback: true
+        fallback: false
     }
 }
 
