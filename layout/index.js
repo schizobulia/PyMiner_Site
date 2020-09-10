@@ -42,6 +42,9 @@ export default class SiderLayout extends React.Component {
                                     <Menu.Item key="h4">
                                         <Link href="http://py2cn.com/docs/"><a target="_blank">文档</a></Link>
                                     </Menu.Item>
+                                    <Menu.Item key="h5">
+                                        <Link href="/plug"><a>插件</a></Link>
+                                    </Menu.Item>
                                     <Menu.Item key="h0">
                                         <Link href="/news/list"><a>新闻</a></Link>
                                     </Menu.Item>
