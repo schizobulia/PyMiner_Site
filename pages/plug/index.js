@@ -92,6 +92,7 @@ function PlugListPage() {
         <div style={{ width: "80%", margin: "0 auto" }}>
             <div style={{ marginTop: '1rem', marginBottom: '1rem', fontSize: '1rem' }}>
                 {
+
                     TAGS.map((item, index) => (
                         <Tag color="#108ee9" key={index}>{item}</Tag>
                     ))

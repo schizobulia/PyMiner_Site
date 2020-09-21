@@ -78,7 +78,11 @@ export default class SiderLayout extends React.Component {
                         {this.props.children}
                         <BackTop />
                     </Content>
-                    <Footer style={{ textAlign: 'center' }}>2020©PyMiner开发小组，QQ群：945391275</Footer>
+                    <Footer style={{ textAlign: 'center' }}>
+                        2020©PyMiner开发小组，QQ群：945391275
+                        <br></br>
+                        粤ICP备18039181号-1
+                    </Footer>
                 </Layout>
             </Layout>
         );

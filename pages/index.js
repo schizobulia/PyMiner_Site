@@ -1,8 +1,8 @@
 /*
  * @Author: wj
  * @Date: 2020-08-20 15:58:38
- * @LastEditTime: 2020-09-18 22:09:46
- * @LastEditors: wj
+ * @LastEditTime: 2020-09-21 11:59:13
+ * @LastEditors: Please set LastEditors
  * @Description: 首页
  * @FilePath: \PyMiner_Site\pages\index.js
  */
@@ -18,11 +18,13 @@ const content = (
         <p></p>
         <img
             width={200}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+            src="/img/wechat.png"
+            alt="微信"
         />
         <img
             width={200}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+            src="/img/zfb.png"
+            alt="支付宝"
         />
     </div>
 );
